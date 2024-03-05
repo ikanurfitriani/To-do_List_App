@@ -4,7 +4,7 @@ Hi, let me introduce myself, Ika Nurfitriani! This repository contains source co
 # Screenshot Aplikasi
 The following is a screenshot of the To-Do List application:
 
-<img src="SS/Screenshot_To-do_list_app.png" alt="SS1" width="500">
+<img src="SS/Screenshot_To-do_list_app.png" alt="SS1" width="900">
 
 ## Author
 [@Ika Nurfitriani](https://github.com/ikanurfitriani)
