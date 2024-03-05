@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>To-Do List App</h1>
+        <form action="/add" method="POST">
+            <input type="text" name="item" placeholder="Enter new item..." required>
+            <button type="submit">Add Item</button>
+        </form>
+        <ul>
+            {% for index, item in enumerate(todo_list) %}
+                <li>{{ item }} <a href="/delete/{{ index }}">Delete</a></li>
+            {% endfor %}
+        </ul>
+    </div>
+</body>
+</html>
