@@ -14,10 +14,14 @@
             <button type="submit">Add Item</button>
         </form>
         <ul>
-            {% for index, item in enumerate(todo_list) %}
-                <li>{{ item }} <a href="/delete/{{ index }}">Delete</a></li>
+            {% for index, item in todo_list_with_index %}
+                <li>
+                    {{ item }} 
+                    <a href="/edit/{{ index }}">Edit</a> 
+                    <a href="/delete/{{ index }}">Delete</a>
+                </li>
             {% endfor %}
-        </ul>
+        </ul>                
     </div>
 </body>
 </html>
