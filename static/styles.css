@@ -76,3 +76,21 @@ a {
     text-decoration: none;
     margin-left: 10px;
 }
+
+.edit-button {
+    background-color: rgb(6, 153, 21);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.delete-button {
+    background-color: rgb(255, 0, 0);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}

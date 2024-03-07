@@ -37,8 +37,12 @@ SOFTWARE. -->
             {% for index, item in todo_list_with_index %}
                 <li>
                     {{ item }} 
-                    <a href="/edit/{{ index }}">Edit</a> 
-                    <a href="/delete/{{ index }}">Delete</a>
+                    <form action="/edit/{{ index }}" method="GET" style="display:inline;">
+                        <button type="submit" class="edit-button">Edit</button>
+                    </form> 
+                    <form action="/delete/{{ index }}" method="GET" style="display:inline;">
+                        <button type="submit" class="delete-button">Delete</button>
+                    </form>
                 </li>
             {% endfor %}
         </ul>                
